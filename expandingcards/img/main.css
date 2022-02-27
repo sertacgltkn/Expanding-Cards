@@ -1,0 +1,56 @@
+
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    width: 30vw;
+}
+
+h3{
+    color: #fff;
+}
+
+.panel .h3{
+    position: absolute;
+    font-size: 3rem;
+    color:rgb(250, 251, 252);
+    bottom: 50px;
+    left: 50px;
+    opacity: 0;
+    transition: opacity 1s ease-in 2s;
+}
+
+.panel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    flex: 0.5;
+    position: relative;
+    border-radius: 10px;
+    margin: 10px;
+    transition: flex 1s ease-in;
+    
+}
+
+.panel.active {
+    flex: 100%;
+    align-items:flex-start;
+}
+
+
+
